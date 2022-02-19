@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetKing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+            <div class="links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">All Brands</a></li>
+                    <li><a href="">Popular Brands</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text">
+            <h1>World's Largest Super Cars <br> Collection</h1>
+            <p>Welcome To Street King <br>Order Your Dream Super Car Here</p>
+            <button class="btn">EXPLORE</button>
+        </div>
+    </section>
+
+    <!-- all Brands -->
+
+<section class="all-brands">
+    <h1>Some common Brands We Have</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis non voluptate.</p>
+    <div class="row">
+        <div class="all-brands-col1">
+            <img src="img/Audi.jpg">
+            <a href="audi/audi.html"><div class="layer">
+                <h3>AUDI</h3>
+            </div></a>
+        </div>
+        <div class="all-brands-col2">
+            <img src="img/Mercedes.jpg">
+            <div class="layer">
+                <h3>MERCEDES</h3>
+            </div>
+        </div>
+        <div class="all-brands-col3">
+            <img src="img/BMW_red.jpg">
+            <a href="bmw/bmw.html"><div class="layer">
+                <h3>BMW</h3>
+            </div></a>
+        </div>
+    </div>
+</section>  
+
+<!-- Popular Brands -->
+<section>
+<div class="pop-brands">
+    <h1>The Popular Brands We Have</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis non voluptate.</p>
+    <div class="row">
+        <div class="pop-brands-col1">
+            <img src="img/ageraR.jpg">
+            <div class="layer">
+                <h3>KOENIGSEGG</h3>
+            </div>
+        </div>
+        <div class="pop-brands-col2">
+            <img src="img/chiron.jpg">
+            <div class="layer">
+                <h3>BUGATTI</h3>
+            </div>
+        </div>
+        <div class="pop-brands-col3">
+            <img src="img/aventador.jpg">
+            <div class="layer">
+                <h3>LAMBORGHINI</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+    <h1>Call Us From Anywhere Around The World!</h1>
+    <button class="btn">CONTACT US</button>
+</section>
+<!-- logos -->
+<div class="cheading"><h1>About Us</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sequi quas quod aperiam atque iste maxime quisquam nulla assumenda corrupti.</p></div>
+<section class="logos">
+    <div class="audi-l"><a href="audi/audi.html"><img src="logos/Audi.png"></a></div>
+    <div class="Mercedes-l"><img src="logos/mercedes.png" alt=""></div>
+    <div class="bmw-l"><a href="bmw/bmw.html"><img src="logos/BMW.png"></a></div>
+    <div class="koenigsegg-l"><img src="logos/koenigsegg.png" alt=""></div>
+    <div class="bugatti-l"><img src="logos/bugatti.png" alt=""></div>
+    <div class="lamborghini-l"><img src="logos/lamborghini.png" alt=""></div>
+    <div class="rolls-l"><img src="logos/Rolls-royce.png" alt=""></div>
+</section>
+<section class="footer">
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Tarique Ansari</p>
+</section>
+
+<!-- javascript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+
+</html>
