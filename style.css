@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: linear-gradient(rgba(20, 30, 51, 0.75),rgba(0,0,0,0.75)),url("img/bolide.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover ;
+    min-height: 100vh;
+    min-width: 100%;
+}
+.logo img{
+    width: 130px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2% 6%;
+}
+nav .fa{
+    display: none;
+} 
+.links ul li{
+    display: inline-block;
+    position: relative;
+    padding: 20px 12px;
+}
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.links ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    left: 0px;
+    bottom: 10px;
+    background: red;
+    position: absolute;
+    transition: 0.5s;
+}
+.links ul li a:hover::after{
+    width: 100%;
+}
+.text{
+    text-align: center;
+    top: 40%;
+    position: absolute;
+    width: 100%;
+    color: white;
+}
+.text h1{
+    color: white;
+    font-size: 40px;
+}
+.text p{
+    font-size: 22px;
+}
+.btn{
+    padding: 10px;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+    background: transparent;
+}
+.btn:hover{
+   background: red;
+   border: 2px solid white;
+   transition: 0.5s;
+}
+@media(max-width: 700px){
+    body{
+        overflow-x: hidden;
+    }
+    .header{
+        overflow-x: hidden;
+    }
+    .links {
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        background: red;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .links ul{
+        padding: 30px;
+        margin-top: 10px;
+    }
+     .links ul li{
+        display: block;
+    } 
+    .links ul li a{
+        font-size: 17px;
+    }
+    .text h1{
+        font-size: 28px;
+    }
+    .text p{
+        font-size: 24px;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+         font-size: 22px;
+         cursor: pointer;
+    }
+}
+@media(min-width:1720px){
+    .logo img{
+        width: 230px;
+    }
+    .links ul li{
+        padding:24px ;
+        padding-top : 46px; 
+    }
+    .links ul li a{
+        font-size: 26px;
+    }
+    .text h1{
+        font-size: 80px;
+    }
+    .text p{
+        font-size: 55px;
+    }
+    .btn{
+        padding: 25px;
+        margin: 25px;
+        font-size: 40px;
+    }
+}
+
+/* all brands */
+.all-brands{
+    text-align: center;
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+}
+.all-brands h1{
+    font-size: 40px;
+    margin-top: 40px;
+}
+.all-brands p{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+.all-brands-col1{
+    position: relative;
+}
+.all-brands-col1 a{
+    color: white;
+}
+.all-brands-col2{
+    position: relative;
+}
+.all-brands-col3{
+    position: relative;
+}
+.all-brands-col3 a{
+  color: white;
+}
+.all-brands-col1 img{
+   width: 350px;
+   height: 100%;
+   padding: 10px;
+   border-radius: 20px;
+}
+.all-brands-col2 img{
+    width: 350px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.all-brands-col3 img{
+    width: 350px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.layer{
+  background: transparent;
+  width: 350px;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, .7);;
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform:translateX(-50%) ;
+  position: absolute;
+  opacity: 0 ;
+  transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+@media(max-width: 1290px){
+    .all-brands h1{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .all-brands p{
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .all-brands-col1 img{
+        width: 310px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .all-brands-col2 img{
+        width: 310px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .all-brands-col3 img{
+        width: 310px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .layer{
+        width: 310px;
+        padding: 20px;
+      }
+      .layer h3{
+        font-size: 25px;
+      }
+}
+@media(max-width: 850px){
+    .row{
+        flex-direction: column;
+    }
+    .layer{
+        width: 350px;
+        height: 97%;
+        padding: 0px;
+        margin-left: 150px;
+      }
+      .layer h3{
+        font-weight: 500;
+        font-size: 26px;
+      }
+}
+@media(min-width: 1720px){
+    .row{
+        width: 94%;
+    }
+    .all-brands h1{
+        font-size: 44px;
+        margin-top: 40px;
+    }
+    .all-brands p{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .all-brands-col1 img{
+        width: 500px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .all-brands-col2 img{
+        width: 500px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .all-brands-col3 img{
+        width: 500px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .layer{
+        width: 500px;
+        padding: 20px;
+      }
+      .layer h3{
+        font-size: 40px;
+      }
+}
+
+/* Popular Brands */
+.pop-brands{
+    margin-top: 20px;
+    padding-bottom: 55px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.pop-brands h1{
+    font-size: 40px;
+    margin-top: 60px;
+}
+.pop-brands p{
+    font-size: 30px;
+    margin-bottom:30px ;
+}
+.pop-brands-col1{
+    position: relative;
+}
+.pop-brands-col2{
+    position: relative;
+}
+.pop-brands-col3{
+    position: relative;
+}
+.pop-brands-col1 img{
+    width: 350px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.pop-brands-col2 img{
+    width: 350px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.pop-brands-col3 img{
+    width: 350px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+@media(max-width: 1290px){
+    .row{
+        width: 94%;
+    }
+    .pop-brands h1{
+        font-size: 44px;
+        margin-top: 40px;
+    }
+    .pop-brands p{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .pop-brands-col1 img{
+        width: 310px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .pop-brands-col2 img{
+        width: 310px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .pop-brands-col3 img{
+        width: 310px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+}
+@media(min-width:1720px){
+    .pop-brands h1{
+        font-size: 44px;
+        margin-top: 60px;
+    }
+    .pop-brands p{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .pop-brands-col1 img{
+        width: 500px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .pop-brands-col2 img{
+        width: 500px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .pop-brands-col3 img{
+        width: 500px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+}
+/* Contact */
+.contact{
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 60px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(71, 66, 66, 0.911),rgba(0,0,0,0.75)),url("contact.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+.contact h1{
+    padding: 10px;
+    margin-top: 80px;
+    color: white;
+    font-size: 30px;
+}
+@media(max-width: 700px){
+    .contact{
+        width: 80%;
+        height: 250px;
+    }
+    .contact h1{
+        padding: 10px;
+        margin-top: 70px;
+        color: white;
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 20px;
+    }
+}
+@media(min-width:1720px){
+    .contact{
+        height: 600px;
+    }
+    .contact h1{
+        font-size: 60px;
+        margin-top: 160px;
+    }
+}
+
+/* logos */
+.cheading h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+.cheading p{
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 30px;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.audi-l img{
+   margin-top: 20px;
+   width: 170px;
+}
+.Mercedes-l img{
+    width: 180px;
+    margin-left: -20px;
+}
+.bmw-l img{
+    width: 90px;
+}
+.koenigsegg-l img{
+    margin-left: 45px;
+    width: 100px;
+}
+.bugatti-l img{
+    margin-left: 35px;
+    margin-top: -25px;
+    width: 130px;
+}
+.lamborghini-l img{
+    margin-left: 15px;
+    margin-top: -20px;
+    width: 110px;
+}
+.rolls-l img{
+    margin-left: 15px;
+    margin-top: -20px;
+    width: 110px;
+}
+@media(max-width: 850px){
+    .rolls-l{
+        overflow-x: hidden;
+    }
+    .audi-l img{
+        margin-top: 10px;
+        width: 100px;
+        margin-left: -30px;
+     }
+     .Mercedes-l img{
+         width: 120px;
+         margin-left: -20px;
+     }
+     .bmw-l img{
+         width: 60px;
+         margin-top: -5px;
+     }
+     .koenigsegg-l img{
+        margin-top: -8px;
+         margin-left: 20px;
+         width: 70px;
+     }
+     .bugatti-l img{
+         margin-left: 20px;
+         margin-top: -25px;
+         width: 90px;
+     }
+     .lamborghini-l img{
+         margin-left: 15px;
+         margin-top: -16px;
+         width: 70px;
+     }
+     .rolls-l img{
+         margin-left: 10px;
+         margin-top: -16px;
+         width: 80px;
+     }
+}
+@media(min-width:1720px){
+    .cheading h1{
+        font-size: 48px;
+    }
+    .cheading p{
+        font-size: 28px;
+    }
+    .logos{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .audi-l img{
+        margin-top: 25px;
+        width: 280px;
+        margin-left: -30px;
+     }
+     .Mercedes-l img{
+         width: 280px;
+         margin-left: -20px;
+     }
+     .bmw-l img{
+         width: 140px;
+         margin-top: -5px;
+     }
+     .koenigsegg-l img{
+        margin-top: -8px;
+         margin-left: 40px;
+         width: 170px;
+     }
+     .bugatti-l img{
+         margin-left: 40px;
+         margin-top: -25px;
+         width: 180px;
+     }
+     .lamborghini-l img{
+         margin-left: 45px;
+         margin-top: -16px;
+         width: 160px;
+     }
+     .rolls-l img{
+         margin-left: 30px;
+         margin-top: -16px;
+         width: 180px;
+     }
+}
+
+/* footer */
+.footer p{
+    text-align: center;
+}
+.icons{
+    text-align: center;
+}
+@media(min-width:1720px){
+    .icons .fa{
+        font-size: 50px;
+        padding-left: 20px;
+    }
+    .footer p{
+        font-size: 30px;
+    }
+}
